@@ -1,8 +1,8 @@
 # AGENTS.md
 
 Guidance for agents working in this repo. See [README.md](README.md) for the
-user-facing overview and [STORE.md](STORE.md) / [PRIVACY.md](PRIVACY.md) for
-Chrome Web Store submission material.
+user-facing overview and [PRIVACY.md](PRIVACY.md) for the Chrome Web Store
+privacy policy.
 
 ## What this is
 
@@ -91,8 +91,8 @@ new static file must be added there to reach `dist/`. `tools/package.mjs` zips
   reuses the real `src/popup.css` (scoped) and `icons/icon128.png`.
 - **Version bump:** update `manifest.json` and `package.json` together, then
   `bun run zip`.
-- **Chrome Web Store copy must stay consistent** across `STORE.md`,
-  `PRIVACY.md`, `manifest.json` description (<=132 chars), and the listing fields.
+- **Chrome Web Store copy must stay consistent** across `PRIVACY.md`,
+  `manifest.json` description (<=132 chars), and the listing fields.
 
 ## Definition of done
 

@@ -123,9 +123,7 @@ accompanies them.
 ## Publishing
 
 `bun run zip` builds `dist/` and packages `releases/nomisma-<version>.zip` for
-the Chrome Web Store. Listing copy, permission justifications, the data-usage
-answers, and a pre-submission checklist are in [STORE.md](STORE.md); the privacy
-policy is in [PRIVACY.md](PRIVACY.md).
+the Chrome Web Store. The privacy policy is in [PRIVACY.md](PRIVACY.md).
 
 ## Privacy
 
