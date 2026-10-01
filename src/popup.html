@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nomisma</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="head">
+    <div class="brand">
+      <div>
+        <div class="title-row">
+          <h1>Nomisma</h1>
+          <span id="version" class="version"></span>
+        </div>
+        <p class="tag">Every price, in your currency</p>
+      </div>
+    </div>
+    <label class="switch" title="Turn Nomisma on or off">
+      <span class="sr-only">Enable Nomisma</span>
+      <input type="checkbox" id="enabled" />
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <main class="body">
+    <label class="field">
+      <span class="label">Show prices in</span>
+      <select id="targetCurrency"></select>
+    </label>
+
+    <label class="field">
+      <span class="label">Display</span>
+      <select id="displayMode">
+        <option value="inline">Inline: show both</option>
+        <option value="replace">Replace: hover for original</option>
+      </select>
+    </label>
+
+    <div class="field">
+      <span class="label">Large amounts</span>
+      <label class="row">
+        <span class="row-label">Abbreviate over 1,000 (1.2K, 3.4M)</span>
+        <span class="switch sm">
+          <input type="checkbox" id="abbreviateLarge" />
+          <span class="slider"></span>
+        </span>
+      </label>
+    </div>
+
+    <div class="field" id="siteField" hidden>
+      <span class="label">This site</span>
+      <label class="row">
+        <span class="row-label">
+          <span class="sr-only">Enable on </span><span id="siteHost"></span>
+        </span>
+        <span class="switch sm">
+          <input type="checkbox" id="siteEnabled" />
+          <span class="slider"></span>
+        </span>
+      </label>
+      <p class="hint">Turn off to pause Nomisma on this site.</p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span id="rateInfo" class="rate">Loading rates…</span>
+    <span class="foot-links">
+      <a
+        class="tip"
+        href="https://ko-fi.com/spiegelhauer"
+        target="_blank"
+        rel="noreferrer"
+        title="Support Nomisma on Ko-fi"
+        >☕ Tip</a
+      >
+      <a
+        class="credit"
+        href="https://spiegelhauer.fyi/"
+        target="_blank"
+        rel="noreferrer"
+        >© spiegelhauer.fyi</a
+      >
+    </span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

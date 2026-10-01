@@ -1,0 +1,30 @@
+{
+	"name": "nomisma",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Nomisma: always see prices in your currency, on any website.",
+	"engines": {
+		"node": ">=24"
+	},
+	"scripts": {
+		"build": "bun build.mjs",
+		"dev": "bun build.mjs --watch",
+		"lint": "biome check",
+		"format": "biome check --write",
+		"typecheck": "tsc --noEmit",
+		"test": "bun test",
+		"check": "biome check && bun run typecheck && bun test",
+		"zip": "bun run build && bun tools/package.mjs",
+		"icons": "python3 tools/make-icons.py",
+		"screenshots": "bun scripts/screenshots.mjs"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.15",
+		"@types/bun": "^1.4.2",
+		"@types/chrome": "^0.3.4",
+		"@types/node": "^24",
+		"esbuild": "^0.28.2",
+		"typescript": "^7.0.2"
+	}
+}

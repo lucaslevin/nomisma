@@ -1,0 +1,40 @@
+/* Nomisma: injected price annotations. Kept subtle so it blends with any theme. */
+
+.cc-wrap {
+	white-space: nowrap;
+}
+
+.cc-conv {
+	font-size: 0.9em;
+	opacity: 0.7;
+	color: inherit;
+	white-space: nowrap;
+}
+
+/* hide annotations we could not compute */
+.cc-same > .cc-conv,
+.cc-norate > .cc-conv {
+	display: none;
+}
+
+/* inline (default): "12,34 € ≈ $13.97" */
+.cc-mode-inline .cc-conv:not(:empty)::before {
+	content: " ≈ ";
+	opacity: 0.6;
+}
+
+/* replace: show the converted amount; hover the value to reveal the original */
+.cc-mode-replace .cc-ok > .cc-orig {
+	display: none;
+}
+.cc-mode-replace .cc-ok > .cc-conv:not(:empty) {
+	font-size: inherit;
+	opacity: 1;
+	cursor: help;
+}
+.cc-mode-replace .cc-ok:hover > .cc-conv {
+	display: none;
+}
+.cc-mode-replace .cc-ok:hover > .cc-orig {
+	display: inline;
+}
