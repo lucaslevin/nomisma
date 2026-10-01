@@ -7,6 +7,21 @@ shows each one in your chosen currency right next to the original,
 A light Chrome extension (Manifest V3) written in TypeScript, bundled with
 esbuild. Cardmarket is a prime target, but it works everywhere.
 
+## Why
+
+I collect Magic cards and buy a lot on [Cardmarket](https://www.cardmarket.com/),
+which prices everything in euros. Every time I compared a card against a US
+listing I was doing the same mental arithmetic, over and over, and I could not
+find a converter that did it well. The ones I tried either replaced the price so
+I lost the original, missed half the page, or ignored the price-history charts
+entirely.
+
+So I built the one I wanted. Nomisma keeps the original price and drops the
+conversion next to it, works on the whole page including dropdowns and
+Chart.js price charts, and does all of it locally with no account and no
+tracking. It started as a tool for card shopping, but nothing in it is
+card-specific: if a site shows prices, it works.
+
 ```
 nomisma/
   manifest.json          extension manifest (copied into dist/)
