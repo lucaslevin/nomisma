@@ -131,3 +131,7 @@ policy is in [PRIVACY.md](PRIVACY.md).
 
 The only network request is the single daily rate fetch. Nothing about the
 pages you visit, or you, is collected, stored remotely, or sent anywhere.
+
+## License
+
+[MIT](LICENSE) © Lucas Spiegelhauer Levin
